@@ -1,0 +1,104 @@
+.organizations-list {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    max-width: 1280px;
+    width: 100%;
+    min-height: 650px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    table-layout: fixed;
+}
+
+.organizations-list__line {
+    border-bottom: 1px solid black;
+    height: 50px;
+    width: 100%;
+    
+}
+
+.organizations-list__line_border {
+    border: none;
+}
+
+.organizations-list__column_footer {
+    text-align: right;
+}
+
+.organizations-list__column {
+    border-right: 1px solid black;
+    padding: 0;
+    /* min-width: 350px; */
+    /* width: 100%; */
+}
+
+.organizations-list__column:last-of-type {
+    min-width: 50px;
+    /* width: 100%; */
+    border-right: none;
+}
+
+.organizations-list__button-close {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    max-width: 34px;
+    min-height: 34px;
+    cursor: pointer;
+}
+
+.organizations-list__close-icon {
+    display: block;
+    max-width: 34px;
+    min-height: 34px;
+}
+
+.organizations-list__button-back {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    max-width: 34px;
+    width: 100%;
+    min-height: 32px;
+    cursor: pointer;
+}
+
+.organizations-list__button-forward {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    max-width: 34px;
+    width: 100%;
+    min-height: 32px;
+    cursor: pointer;
+}
+
+.organizations-list__icon-btn {
+    display: block;
+}
+
+.organizations-list__icon-btn_rotate {
+    transform: rotate(180deg);
+}
+
+.organizations-list__button-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.organizations-list__page-number {
+    align-self: center;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    text-align: center;
+}
