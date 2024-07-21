@@ -37,6 +37,41 @@ export default {
                     name: 'ООО Вектор',
                     director: 'Васильев Д М',
                     number: '+79315086483'
+                },
+                {
+                    name: 'ООО Вектор',
+                    director: 'Васильев Д М',
+                    number: '+79315086483'
+                },
+                {
+                    name: 'ООО Вектор',
+                    director: 'Васильев Д М',
+                    number: '+79315086483'
+                },
+                {
+                    name: 'ООО Вектор',
+                    director: 'Васильев Д М',
+                    number: '+79315086483'
+                },
+                {
+                    name: 'ООО Вектор',
+                    director: 'Васильев Д М',
+                    number: '+79315086483'
+                },
+                {
+                    name: 'ООО Вектор',
+                    director: 'Васильев Д М',
+                    number: '+79315086483'
+                },
+                {
+                    name: 'ООО Вектор',
+                    director: 'Васильев Д М',
+                    number: '+79315086483'
+                },
+                {
+                    name: 'ООО Вектор',
+                    director: 'Васильев Д М',
+                    number: '+79315086483'
                 }
             ],
             isActiveAddPopup: false,

@@ -1,47 +1,42 @@
 <template>
     <table className="organizations-list">
         <thead>
-            <tr className="organizations-list__line">
+            <tr className="organizations-list__line organizations-list__line_border">
                 <th className="organizations-list__column">Название</th>
                 <th className="organizations-list__column"><a @click="sortedList()">ФИО директора</a></th>
                 <th className="organizations-list__column">Номер телефона</th>
-                <th className="organizations-list__column"></th>
+                <th className="organizations-list__column organizations-list__column_width"></th>
             </tr>
         </thead>
         <tbody>
-            <tr  className="organizations-list__line" v-if="organizations.length == 0">
-                <td colspan="4" className="organizations-list__column">Список организаций пуст(</td>
+            <tr className="organizations-list__line" v-if="organizations.length == 0">
+                <td colspan="4" className="organizations-list__column">Список организаций пуст.</td>
             </tr>
-            <tr className="organizations-list__line" v-for="(el, index) in filteredList.slice(number, quantity)" :key="index">
+            <tr className="organizations-list__line" v-for="(el, index) in filteredList.slice(number, quantity)"
+                :key="index">
                 <td className="organizations-list__column">{{ el.name }}</td>
                 <td className="organizations-list__column">{{ el.director }}</td>
                 <td className="organizations-list__column">{{ el.number }}</td>
-                <td className="organizations-list__column">
+                <td className="organizations-list__column organizations-list__column_width">
                     <button @click="removeItem(index)" type="button" className="organizations-list__button-close">
                         <img className="organizations-list__close-icon" src="../../images/del-icon.svg" alt="">
                     </button>
                 </td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr className="organizations-list__line organizations-list__line_border">
-                <td colspan="4" className="organizations-list__column organizations-list__column_footer">
-                    <div className="organizations-list__button-block">
-                        <button type="button" @click="pageBackSwitch()" className="organizations-list__button-back">
-                            <img className="organizations-list__icon-btn organizations-list__icon-btn_rotate"
-                                src="../../images/forward-icon.svg" alt="">
-
-                        </button>
-                        <p className="organizations-list__page-number">Страница {{ page }}</p>
-                        <button type="button" @click="pageSwitch()" className="organizations-list__button-forward">
-                            <img className="organizations-list__icon-btn" src="../../images/forward-icon.svg" alt="">
-
-                        </button>
-                    </div>
-                </td>
-            </tr>
-        </tfoot>
     </table>
+    <div className="organizations-list__button-block">
+        <button type="button" @click="pageBackSwitch()" className="organizations-list__button-back">
+            <img className="organizations-list__icon-btn organizations-list__icon-btn_rotate"
+                src="../../images/forward-icon.svg" alt="">
+
+        </button>
+        <p className="organizations-list__page-number">Страница {{ page }}</p>
+        <button type="button" @click="pageSwitch()" className="organizations-list__button-forward">
+            <img className="organizations-list__icon-btn" src="../../images/forward-icon.svg" alt="">
+
+        </button>
+    </div>
 </template>
 
 <script>
@@ -67,7 +62,8 @@ export default {
 
     data() {
         return {
-            sortParam: 'directors',
+            sortDirectors: 'directors',
+            sortCompany: '',
             page: ref(1),
             number: 0,
             quantity: 10
@@ -89,22 +85,22 @@ export default {
         },
 
         pageSwitch() {
-            if(this.organizations.length > 10 && this.organizations.length > this.quantity) {
-                this.page ++;
+            if (this.organizations.length > 10 && this.organizations.length > this.quantity) {
+                this.page++;
                 this.number = this.number + 10
                 this.quantity = this.quantity + 10
             }
-            if(this.organizations.length <= 10 || this.organizations.length < this.quantity) {
+            if (this.organizations.length <= 10 || this.organizations.length < this.quantity) {
                 console.log('нельзя')
             }
         },
 
         pageBackSwitch() {
-            if(this.organizations.length < 10 || this.page === 1) {
+            if (this.organizations.length < 10 || this.page === 1) {
                 console.log('нельзя понял')
             }
-            if(this.organizations.length > 10 && this.page !== 1) {
-                this.page --;
+            if (this.organizations.length > 10 && this.page !== 1) {
+                this.page--;
                 this.number = this.number - 10;
                 this.quantity = this.quantity - 10;
             }

@@ -18,8 +18,8 @@
                     </label>
                 </div>
                 <div class="form__block-button">
-                    <button class="form__button form__button_cancel" @click="closePopup()" type="button">Отмена</button>
-                    <button class="form__button form__button_submit"
+                    <button class="form__button form__button_cancel" @click="closeAddPopup()" type="button">Отмена</button>
+                    <button  class="form__button form__button_submit"
                         type="submit">Ок</button>
                 </div>
             </form>
@@ -63,6 +63,13 @@ export default {
                     number: this.organizationNumber
                 })
 
+            this.closePopup()
+            this.organizationName = '',
+            this.organizationDirector = '',
+            this.organizationNumber = ''
+        },
+
+        closeAddPopup() {
             this.closePopup()
             this.organizationName = '',
             this.organizationDirector = '',
