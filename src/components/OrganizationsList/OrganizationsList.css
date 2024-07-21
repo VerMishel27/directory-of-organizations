@@ -50,6 +50,11 @@
   align-self: center;
 }
 
+.organizations-list__filter-button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
 .organizations-list__column_width {
   max-width: 50px;
   width: 100%;
@@ -136,4 +141,13 @@
   font-size: 16px;
   font-weight: 400;
   color: rgb(255, 255, 255);
+}
+
+.icon_disable {
+  display: none;
+}
+
+.button_disable:hover {
+  opacity: 100%;
+  cursor: default;
 }

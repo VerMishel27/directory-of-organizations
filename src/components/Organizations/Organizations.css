@@ -1,66 +1,65 @@
 .organizations {
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
 }
 
-
 .search-add-organization {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .search-add-organization__search-block {
-    display: flex;
+  display: flex;
 }
 
 .search-add-organization__label {
-    padding: 0;
-    max-width: 300px;
-    width: 100%;
-    background-color: rgba(249, 249, 249, 1);
-    border-radius: 40px;
+  padding: 0;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgba(249, 249, 249, 1);
+  border-radius: 40px;
 }
 
 .search-add-organization__search {
-    margin: 0;
-    margin-left: 20px;
-    padding: 0;
-    border: 0;
-    height: 100%;
-    width: 90%;
-    font-family: 'Inter', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    border-radius: 40px;
-    background: none;
-    outline: none;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  width: 90%;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border-radius: 40px;
+  background: none;
+  outline: none;
 }
 
 .search-add-organization__add-button {
-    max-width: 150px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Inter', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 50px;
-    text-align: center;
-    background: rgba(43, 224, 128, 1);
-    color: rgba(0, 0, 0, 1);
-    border-radius: 10px;
-    display: block;
-    box-sizing: border-box;
+  max-width: 150px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  background: rgba(43, 224, 128, 1);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .search-add-organization__add-button:hover {
-    opacity: 80%;
-    cursor: pointer;
+  opacity: 80%;
+  cursor: pointer;
 }
